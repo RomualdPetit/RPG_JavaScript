@@ -6,7 +6,7 @@ class Wizard extends Character {
 
   specialMove(victim) {
     this.dmg = 7;
-    alert(`${this.name} uses ${this.spe} on ${victim.name}.`);
+    alert(`${this.name} utilise ${this.spe} sur ${victim.name}.`);
     this.dealDamage(victim);
     this.dmg = 2;
     this.mana -= 25;
@@ -14,7 +14,7 @@ class Wizard extends Character {
 
   seeSpecialMove() {
     alert(
-      `${this.spe}\n- Causes 7 damage points to the enemy.\n- Costs 25 mana points.`
+      `${this.spe}\n- Inflige 7 de dégats à l'ennemie.\n- Coute 25 points de mana.`
     );
   }
 }
